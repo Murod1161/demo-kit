@@ -1,0 +1,225 @@
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+@config "../../tailwind.config.js";
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../../public/fonts/FuturaPT-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../../public/fonts/FuturaPT-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../../public/fonts/FuturaPT-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../../public/fonts/FuturaPT-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../../public/fonts/FuturaPT-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header--menu-shown {
+    @apply bg-white;
+}
+
+.navbar-link {
+    @apply block px-6 text-sm no-underline text-black py-2 uppercase font-medium hover:text-button-bg transition-all duration-100 ease-in;
+}
+
+.dropdown-arrow {
+  position: relative;
+}
+
+.dropdown-arrow::before {
+  content: '';
+  position: absolute;
+  top: -31px;
+  left: 20px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #EAE9F3 transparent;
+}
+
+.scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-button-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.swiper-button-disabled svg {
+    color: #6c6d80;
+}
+
+.swiper-button-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+@media (min-width: 1280px) {
+    .gradient-overlay {
+        position: relative;
+    }
+
+    .gradient-overlay::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 100px;
+        height: 100%;
+        z-index: 10;
+        background: linear-gradient(to left, #16181d 25%, transparent 100%);
+    }
+}
+
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-slide {
+    animation: scroll-x 100s linear infinite;
+    pointer-events: none;
+    display: flex;
+    width: max-content;
+}
+
+.feedback .form-group {
+    position: relative;
+}
+
+.feedback .form-group input + label,
+.feedback .form-group textarea + label,
+.feedback .form-group select + label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s;
+    top: 14px;
+}
+
+.feedback .form-group select + label {
+    background-color: #0e1014;
+}
+
+.feedback input,
+.feedback textarea,
+.feedback select {
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.feedback input:placeholder-shown + label,
+.feedback textarea:placeholder-shown + label {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .feedback input:placeholder-shown + label,
+    .feedback textarea:placeholder-shown + label {
+        font-size: 16px;
+    }
+}
+
+.feedback input:not(:placeholder-shown) + label,
+.feedback textarea:not(:placeholder-shown) + label {
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+@media (min-width: 768px) {
+    .feedback input:not(:placeholder-shown) + label,
+    .feedback textarea:not(:placeholder-shown) + label {
+        font-size: 14px;
+    }
+}
+
+.feedback input:focus + label,
+.feedback textarea:focus + label {
+    transform: translateY(-20px);
+}
+
+.feedback .form-group_error {
+    position: absolute;
+    margin-top: 4px;
+    color: #db3131;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 10px;
+}
+
+@media (min-width: 768px) {
+    .feedback .form-group_error {
+        font-size: 12px;
+    }
+}
+
+.feedback input.input--validatable:invalid {
+    border-color: #db3131;
+}
+
+.feedback input.input--validatable:invalid + label + .form-group_error {
+    position: absolute;
+    color: #db3131;
+    visibility: visible;
+    opacity: 1;
+}
+
+.path-animate,
+.path-animate-reverse {
+    stroke-dashoffset: 14;
+    stroke-dasharray: 7;
+    will-change: animation;
+    -webkit-animation: 2s linear infinite dash;
+    animation: 2s linear infinite dash;
+}
+
+.path-animate-reverse {
+    animation: 2s linear infinite reverse dash;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -1,0 +1,177 @@
+import "./bootstrap";
+
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+import { enableFeedbackInputValidation } from "./functions";
+import { gsap } from "gsap";
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper--projects", {
+        slidesPerView: "auto",
+        slidesOffsetAfter: 24,
+        spaceBetween: 8,
+        breakpoints: {
+            768: {
+                spaceBetween: 18,
+                slidesOffsetAfter: 300,
+            },
+            1024: {
+                spaceBetween: 18,
+                slidesOffsetAfter: 500,
+            },
+            1440: {
+                spaceBetween: 18,
+                slidesOffsetAfter: 585,
+            },
+            1900: {
+                spaceBetween: 18,
+                slidesOffsetAfter: 685,
+            },
+        },
+        navigation: {
+            prevEl: ".btn-prev--projects",
+            nextEl: ".btn-next--projects",
+        },
+    });
+
+    new Swiper(".swiper--testimonials", {
+        slidesPerView: "auto",
+        slidesOffsetAfter: 0,
+        spaceBetween: 40,
+        breakpoints: {
+            768: {
+                slidesOffsetAfter: 200,
+            },
+            1024: {
+                slidesOffsetAfter: 460,
+            },
+            1280: {
+                spaceBetween: 82,
+                slidesOffsetAfter: 635,
+            },
+            1920: {
+                spaceBetween: 82,
+                slidesOffsetAfter: 740,
+            },
+        },
+        navigation: {
+            prevEl: ".btn-prev--testimonials",
+            nextEl: ".btn-next--testimonials",
+        },
+    });
+
+    new Swiper(".swiper--main-vacancies", {
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 8,
+        centeredSlides: true,
+        navigation: {
+            prevEl: ".btn-prev--main-vacancies",
+            nextEl: ".btn-next--main-vacancies",
+        },
+    });
+});
+
+document
+    .querySelectorAll('[data-click-action="toggle-feedback-modal"]')
+    .forEach((btn) =>
+        btn.addEventListener("click", function () {
+            document
+                .querySelector(".feedback-modal")
+                .classList.toggle("hidden");
+        }),
+    );
+
+const select = document.getElementById("themeSelect");
+const arrow = document.getElementById("selectArrow");
+const label = document.getElementById("themeLabel");
+
+function updateLabel() {
+    const hasValue = select.value !== "";
+
+    if (hasValue) {
+        label.classList.add("-top-2", "text-sm");
+        label.classList.remove("top-3");
+    }
+}
+
+// Вращение стрелки
+let isOpen = false;
+select.addEventListener("mousedown", () => {
+    if (isOpen) {
+        arrow.classList.remove("rotate-180");
+        isOpen = false;
+    } else {
+        setTimeout(() => {
+            arrow.classList.add("rotate-180");
+            isOpen = true;
+        }, 0);
+    }
+});
+
+select.addEventListener("blur", () => {
+    arrow.classList.remove("rotate-180");
+    isOpen = false;
+    updateLabel();
+});
+
+select.addEventListener("change", updateLabel);
+
+// При загрузке
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateLabel);
+} else {
+    updateLabel();
+}
+
+const allowedTypes = [
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "image/jpeg",
+    "image/png",
+];
+
+const fileInput = document.querySelector('.feedback input[name="attachment"]');
+const fileName = document.querySelector("#file-name");
+const fileError = document.querySelector("#file-error");
+
+fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+
+    if (file) {
+        const sizeInMB = file.size / (1024 * 1024);
+        const isAllowedType = allowedTypes.includes(file.type);
+
+        if (!isAllowedType) {
+            fileName.classList.add("hidden");
+            fileError.textContent = "Недопустимый формат файла.";
+            fileError.classList.remove("hidden");
+            fileInput.value = "";
+            return;
+        }
+
+        if (sizeInMB > 5) {
+            fileName.classList.add("hidden");
+            fileError.textContent = "Файл слишком большой. Максимум — 5 МБ.";
+            fileError.classList.remove("hidden");
+            fileInput.value = "";
+            return;
+        }
+
+        fileName.textContent = `Выбран: ${file.name}`;
+        fileName.classList.remove("hidden");
+        fileError.classList.add("hidden");
+    } else {
+        fileName.classList.add("hidden");
+        fileError.classList.add("hidden");
+    }
+});
+
+
+document.querySelectorAll('.feedback input[name="name"], .feedback input[name="phone"]').forEach((input) => {
+    input.addEventListener('input', () => {
+        enableFeedbackInputValidation(input);
+    });
+});
+
