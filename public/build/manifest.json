@@ -1,0 +1,48 @@
+{
+  "public/fonts/FuturaPT-Bold.woff": {
+    "file": "assets/FuturaPT-Bold-BbVXbS3M.woff",
+    "src": "public/fonts/FuturaPT-Bold.woff"
+  },
+  "public/fonts/FuturaPT-Book.woff": {
+    "file": "assets/FuturaPT-Book-lScYnpKG.woff",
+    "src": "public/fonts/FuturaPT-Book.woff"
+  },
+  "public/fonts/FuturaPT-Heavy.woff": {
+    "file": "assets/FuturaPT-Heavy-DJxm0Hs4.woff",
+    "src": "public/fonts/FuturaPT-Heavy.woff"
+  },
+  "public/fonts/FuturaPT-Light.woff": {
+    "file": "assets/FuturaPT-Light-BbWpkMs-.woff",
+    "src": "public/fonts/FuturaPT-Light.woff"
+  },
+  "public/fonts/FuturaPT-Medium.woff": {
+    "file": "assets/FuturaPT-Medium-GlMnua03.woff",
+    "src": "public/fonts/FuturaPT-Medium.woff"
+  },
+  "public/images/bg-img.png": {
+    "file": "assets/bg-img-BfcXlqRB.png",
+    "src": "public/images/bg-img.png"
+  },
+  "public/images/logo-light.png": {
+    "file": "assets/logo-light-DUdbgoNo.png",
+    "src": "public/images/logo-light.png"
+  },
+  "public/images/logo.png": {
+    "file": "assets/logo-B6nyOJCl.png",
+    "src": "public/images/logo.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DmhbkdLX.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-AVOik1cm.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-BUrcyj0q.css"
+    ]
+  }
+}
