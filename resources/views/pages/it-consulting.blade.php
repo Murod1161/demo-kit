@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'ИТ-консалтинг | ' . config('app.name'))
+
 @section('content')
     <main class="mx-auto max-w-container">
         <section class="md:mb-15 xl:my-30 2xl xl:gap-3:mb-20 2xl:mt-30 mb-7 select-none p-3 md:p-7 2xl:mx-8">

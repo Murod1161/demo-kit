@@ -464,7 +464,7 @@
                     <span
                         class="w-px h-full bg-primary/10 group-hover:bg-button-bg transition-transform duration-200 ease-in origin-center group-hover:scale-y-60"></span>
                     <span class="px-3 md:p-3 xl:p-4 2xl:p-5">
-                        <svg class="w-2 h-2 md:w-3 md:h-3 2xl:w-4 2xl:h-4">
+                        <svg class="w-2 h-2 md:w-3 md:h-3 2xl:w-4 2xl:h-4 group-hover:text-button-bg transition-all duration-200 ease-in">
                             <use href="#icon-arrow"></use>
                         </svg>
                     </span>
@@ -483,7 +483,7 @@
                 </div>
             </div>
             <div class="gradient-overlay xl:flex xl:flex-row-reverse xl:gap-47">
-                <div class="swiper swiper--testimonials">
+                <div class="swiper swiper--testimonials h-130 md:h-140 xl:h-150 2xl:h-170">
                     <div class="swiper-wrapper m-0 p-0 cursor-default select-none">
                         <div class="swiper-slide bg-[#16181D] md:!w-112 xl:!w-96 2xl:!w-112 rounded-xl">
                             <div class="flex flex-col h-full">
@@ -704,13 +704,13 @@
                     <div class="hidden md:block absolute z-10 bottom-10 right-10 xl:bottom-13 xl:right-13">
                         <div class="flex gap-2">
                             <button
-                                class="btn-prev--main-vacancies bg-secondary border border-primary/30 rounded-sm w-11 h-11 lg:w-13 lg:h-13 2xl:w-15 2xl:h-15 p-0 hover:border-button-bg hover:bg-primary/30 transition-all duration-200 ease-in cursor-pointer">
+                                class="btn-prev--main-vacancies bg-[#16181D] border border-primary/30 rounded-sm w-11 h-11 lg:w-13 lg:h-13 2xl:w-15 2xl:h-15 p-0 hover:border-button-bg hover:bg-primary/30 transition-all duration-200 ease-in cursor-pointer">
                                 <svg class="text-button-bg" width="11px" height="22px">
                                     <use href="#arrow-left"></use>
                                 </svg>
                             </button>
                             <button
-                                class="btn-next--main-vacancies bg-secondary border border-primary/30 rounded-sm w-11 h-11 lg:w-13 lg:h-13 2xl:w-15 2xl:h-15 p-0 hover:border-button-bg hover:bg-primary/30 transition-all duration-200 ease-in cursor-pointer">
+                                class="btn-next--main-vacancies bg-[#16181D] border border-primary/30 rounded-sm w-11 h-11 lg:w-13 lg:h-13 2xl:w-15 2xl:h-15 p-0 hover:border-button-bg hover:bg-primary/30 transition-all duration-200 ease-in cursor-pointer">
                                 <svg class="text-button-bg rotate-180" width="11px" height="22px">
                                     <use href="#arrow-left"></use>
                                 </svg>

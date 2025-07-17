@@ -175,3 +175,23 @@ document.querySelectorAll('.feedback input[name="name"], .feedback input[name="p
     });
 });
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const header = document.getElementById("site-header");
+        const logo = header.querySelector("a");
+        const links = header.querySelectorAll("a, button");
+        const div = header.querySelector("div");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 1) {
+                header.classList.add("bg-white", "shadow-md", "scrolled");
+                logo.classList.remove("bg-[url('/public/images/logo-light.png')]");
+                logo.classList.add("bg-[url('/public/images/logo.png')]");
+                div.classList.remove("md:p-7");
+            } else {
+                header.classList.remove("bg-white", "shadow-md", "scrolled");
+                logo.classList.add("bg-[url('/public/images/logo-light.png')]");
+                logo.classList.remove("bg-[url('/public/images/logo.png')]");
+                div.classList.add("md:p-7");
+            }
+        });
+    });

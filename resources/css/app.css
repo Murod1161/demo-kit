@@ -47,22 +47,26 @@
     @apply bg-white;
 }
 
+.scrolled a {
+    @apply text-secondary;
+}
+
 .navbar-link {
     @apply block px-6 text-sm no-underline text-black py-2 uppercase font-medium hover:text-button-bg transition-all duration-100 ease-in;
 }
 
 .dropdown-arrow {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-arrow::before {
-  content: '';
-  position: absolute;
-  top: -31px;
-  left: 20px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent #EAE9F3 transparent;
+    content: "";
+    position: absolute;
+    top: -31px;
+    left: 20px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #eae9f3 transparent;
 }
 
 .scrollbar-none {
