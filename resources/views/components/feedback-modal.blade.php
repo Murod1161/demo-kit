@@ -11,7 +11,7 @@
         <div class="feedback-modal__form-container"></div>
     </div>
     <div class="right-15 z-60 w-25 h-13 absolute top-10 flex cursor-pointer items-center gap-2" data-click-action="hide-modal">
-        <button class="flex h-8 w-8 items-center justify-center border-none bg-transparent p-0" type="button">
+        <button class="flex h-8 w-8 cursor-pointer items-center justify-center border-none bg-transparent p-0" type="button">
             <span class="absolute block h-[3px] w-4 rotate-45 bg-black"></span>
             <span class="absolute block h-[3px] w-4 -rotate-45 bg-black"></span>
         </button>
@@ -23,4 +23,3 @@
     @endunless
 
 </div>
-
