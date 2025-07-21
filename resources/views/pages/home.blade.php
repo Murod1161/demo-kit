@@ -3,9 +3,9 @@
 @section('content')
     <main class="max-w-container mx-auto">
         <section class="p-3 mb-7 md:p-7 2xl:mb-30 2xl:mt-30 2xl:mx-8 select-none">
-            <h1 class="text-fluid-xl 2xl:text-[150px] leading-none font-normal m-0 mb-7 2xl:mb-15">Будущее начинается<br>
+            <h1 class="animate-fade-in-scale text-fluid-xl 2xl:text-[150px] leading-none font-normal m-0 mb-7 2xl:mb-15">Будущее начинается<br>
                 здесь</h1>
-            <p class="text-xl md:text-[28px] leading-none text-primary/50 max-w-[500px] font-normal m-0">
+            <p class="animate-fade-in-scale text-xl md:text-[28px] leading-none text-primary/50 max-w-[500px] font-normal m-0">
                 Мы предлагаем решения, меняющие бизнес и жизнь, открывая новые горизонты и возможности для роста
             </p>
         </section>

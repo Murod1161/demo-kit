@@ -9,13 +9,11 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-top-right relative m-0 animate-fadeInScale overflow-x-hidden bg-[#0e1014] bg-[url('/public/images/bg-img.png')] bg-[length:120%_auto] bg-no-repeat text-primary xl:bg-[length:70%_auto]">
+<body class="bg-top-right blur-bg relative m-0 overflow-x-hidden bg-[#0e1014] bg-[url('/public/images/bg-img.png')] bg-[length:120%_auto] bg-no-repeat text-primary xl:bg-[length:70%_auto]">
 
     @include('components.icons')
-    <div class="blur-bg">
-        @include('layouts.header')
-        @yield('content')
-    </div>
+    @include('layouts.header')
+    @yield('content')
     @include('layouts.footer')
 
     @include('components.feedback-modal')

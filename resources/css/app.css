@@ -51,7 +51,6 @@
   position: absolute;
   inset: 0;
   backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   z-index: -50;
 }
 

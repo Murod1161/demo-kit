@@ -1,4 +1,4 @@
-<header class="group sticky top-0 z-50 w-full" id="site-header">
+<header class="animate-fade-in-scale group sticky top-0 z-50 w-full" id="site-header">
     <div class="mx-auto flex max-w-container transition-all justify-between p-3 md:p-7">
         <a class="flex h-8 w-10 bg-[url('/public/images/logo-light.png')] bg-contain bg-no-repeat group-[.header--menu-shown]:bg-[url('/public/images/logo.png')] md:h-[59px] md:w-[74px]"
             href="{{ route('home') }}">
