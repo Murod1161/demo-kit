@@ -12,8 +12,8 @@ module.exports = {
       },
       fontSize: {
         "fluid-xs": "clamp(16px, 1.2vw, 20px)",
-        "fluid-lg": "clamp(30px, 7vw, 74px)",
         "fluid-md": "clamp(16px, 3.5vw, 24px)",
+        "fluid-lg": "clamp(30px, 7vw, 74px)",
         "fluid-xl": "clamp(60px, 7vw, 135px)",
         "fluid-btn": "clamp(44px, 7vw, 60px)",
       },

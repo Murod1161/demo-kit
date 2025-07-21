@@ -1,4 +1,4 @@
-<footer class="max-w-container mx-auto pt-10 lg:pt-20 px-3 md:px-7">
+<footer class=" max-w-container mx-auto pt-10 lg:pt-20 px-3 md:px-7">
     <div class="grid grid-cols-1 sm:grid-cols-24 gap-5 lg:pb-10 xl:pb-15">
         <a class="col-span-24 xl:col-span-5 hidden sm:block mb-7" href="/">
             <img src="/images/logo-light.png" width="74" height="59" alt="Логотип компании">

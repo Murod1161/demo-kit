@@ -8,3 +8,4 @@ Route::get('/', [BrandController::class, 'index'])->name('home');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::view('/it-consulting', 'pages.it-consulting')->name('it-consulting');
+Route::view('/contact-us', 'pages.contact-us')->name('contact-us');

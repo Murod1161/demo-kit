@@ -117,7 +117,7 @@
                 </li>
 
                 <li>
-                    <a class="text-sm font-medium uppercase text-inherit no-underline hover:text-button-bg" href="#">Контакты</a>
+                    <a class="text-sm font-medium uppercase text-inherit no-underline hover:text-button-bg" href="{{ route('contact-us') }}">Контакты</a>
                 </li>
             </ul>
             <div class="flex justify-end xl:hidden">

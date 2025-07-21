@@ -10,12 +10,12 @@
 </head>
 
 <body class="bg-top-right blur-bg relative m-0 overflow-x-hidden bg-[#0e1014] bg-[url('/public/images/bg-img.png')] bg-[length:120%_auto] bg-no-repeat text-primary xl:bg-[length:70%_auto]">
-
     @include('components.icons')
     @include('layouts.header')
-    @yield('content')
+    <main class="mx-auto max-w-container">
+        @yield('content')
+    </main>
     @include('layouts.footer')
-
     @include('components.feedback-modal')
     @vite('resources/js/app.js')
 
