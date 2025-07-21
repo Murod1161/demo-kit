@@ -667,7 +667,7 @@
                     </p>
                 </div>
 
-                <x-contact-form />
+                <x-feedback-form />
             </div>
         </section>
 

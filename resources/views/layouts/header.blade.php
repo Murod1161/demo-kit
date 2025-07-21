@@ -6,7 +6,7 @@
         </a>
 
         <nav
-            class="md:top-22 fixed left-0 top-12 flex hidden h-[calc(100vh-64px)] w-full flex-col gap-10 bg-white px-3 pt-12 text-[#0E1014] group-[.header--menu-shown]:flex md:px-7 xl:static xl:flex xl:h-auto xl:w-[750px] xl:flex-row xl:items-center xl:bg-inherit xl:p-0 xl:text-primary">
+            class="md:top-22 fixed left-0 top-12 flex hidden h-screen w-full flex-col gap-10 bg-white px-3 pt-12 text-[#0E1014] group-[.header--menu-shown]:flex md:px-7 xl:static xl:flex xl:h-auto xl:w-[750px] xl:flex-row xl:items-center xl:bg-inherit xl:p-0 xl:text-primary">
             <ul class="xl:w-188 m-0 flex list-none flex-col gap-7 p-0 xl:flex-row xl:justify-center xl:gap-4">
                 <li class="group/services relative flex items-center justify-between xl:list-item">
                     <a class="cursor-context-menu items-center text-sm font-medium uppercase group-hover/services:text-button-bg">Услуги
@@ -131,14 +131,14 @@
             <div class="hidden justify-end group-[.header--menu-shown]:hidden md:block">
                 <button
                     class="w-26 xl:w-30 xl:h-13 2xl:w-35 h-10 cursor-pointer rounded-md border-2 border-solid border-transparent bg-primary px-2.5 py-2 font-futura text-xs/3 uppercase text-[#26264F] transition-all duration-200 ease-in hover:bg-[#31353f] hover:text-white xl:text-sm 2xl:h-16 2xl:text-base"
-                    data-click-action="toggle-feedback-modal" data-path="modal-callback" type="button">Связаться
+                    data-click-action="show-modal" data-path="modal-callback" type="button">Связаться
                 </button>
             </div>
 
             <button class="border-none bg-transparent p-0 xl:hidden" type="button" onclick="this.closest('header')?.classList.toggle('header--menu-shown')">
                 <span class="sr-only">Скрыть/Показать меню</span>
 
-                <div class="w-7.5 h-7.5 relative flex cursor-pointer flex-col justify-center group-[.header--menu-shown]:hidden">
+                <div class="toggler-icons w-7.5 h-7.5 relative flex cursor-pointer flex-col justify-center group-[.header--menu-shown]:hidden">
                     <span class="mb-1.5 block h-[1px] w-full bg-primary"></span>
                     <span class="block h-[1px] w-full bg-primary"></span>
                 </div>

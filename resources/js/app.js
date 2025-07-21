@@ -72,16 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document
-    .querySelectorAll('[data-click-action="toggle-feedback-modal"]')
-    .forEach((btn) =>
-        btn.addEventListener("click", function () {
-            document
-                .querySelector(".feedback-modal")
-                .classList.toggle("hidden");
-        }),
-    );
-
 const select = document.getElementById("themeSelect");
 const arrow = document.getElementById("selectArrow");
 const label = document.getElementById("themeLabel");
@@ -168,30 +158,80 @@ fileInput.addEventListener("change", () => {
     }
 });
 
+document
+    .querySelectorAll(
+        '.feedback input[name="name"], .feedback input[name="phone"]',
+    )
+    .forEach((input) => {
+        input.addEventListener("input", () => {
+            enableFeedbackInputValidation(input);
+        });
+    });
 
-document.querySelectorAll('.feedback input[name="name"], .feedback input[name="phone"]').forEach((input) => {
-    input.addEventListener('input', () => {
-        enableFeedbackInputValidation(input);
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("site-header");
+    const logo = header.querySelector("a");
+    const div = header.querySelector("div");
+    const span = document.querySelectorAll(".toggler-icons span");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 1) {
+            header.classList.add("bg-white", "shadow-md", "scrolled");
+            logo.classList.remove("bg-[url('/public/images/logo-light.png')]");
+            logo.classList.add("bg-[url('/public/images/logo.png')]");
+            div.classList.remove("md:p-7");
+            span.forEach((icon) => {
+                icon.classList.remove("bg-primary");
+            })
+            span.forEach((icon) => {
+                icon.classList.add("bg-secondary");
+            })
+        } else {
+            header.classList.remove("bg-white", "shadow-md", "scrolled");
+            logo.classList.add("bg-[url('/public/images/logo-light.png')]");
+            logo.classList.remove("bg-[url('/public/images/logo.png')]");
+            div.classList.add("md:p-7");
+            span.forEach((icon) => {
+                icon.classList.remove("bg-secondary");
+            })
+            span.forEach((icon) => {
+                icon.classList.add("bg-primary");
+            })}
     });
 });
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const header = document.getElementById("site-header");
-        const logo = header.querySelector("a");
-        const links = header.querySelectorAll("a, button");
-        const div = header.querySelector("div");
+document.querySelectorAll('[data-click-action="show-modal"]').forEach((btn) => {
+    btn.addEventListener("click", showModal);
+});
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 1) {
-                header.classList.add("bg-white", "shadow-md", "scrolled");
-                logo.classList.remove("bg-[url('/public/images/logo-light.png')]");
-                logo.classList.add("bg-[url('/public/images/logo.png')]");
-                div.classList.remove("md:p-7");
-            } else {
-                header.classList.remove("bg-white", "shadow-md", "scrolled");
-                logo.classList.add("bg-[url('/public/images/logo-light.png')]");
-                logo.classList.remove("bg-[url('/public/images/logo.png')]");
-                div.classList.add("md:p-7");
-            }
-        });
-    });
+document.querySelectorAll('[data-click-action="hide-modal"]').forEach((btn) => {
+    btn.addEventListener("click", hideModal);
+});
+
+function showModal() {
+    document.querySelector(".feedback-modal").classList.remove("hidden");
+
+    const feedbackForm = document.querySelector(".feedback");
+    const modalFormContainer = document.querySelector(
+        ".feedback-modal__form-container",
+    );
+
+    feedbackForm.classList.remove("text-white");
+    feedbackForm.classList.add("text-secondary");
+
+    modalFormContainer.appendChild(feedbackForm);
+}
+
+function hideModal() {
+    document.querySelector(".feedback-modal").classList.add("hidden");
+
+    const feedbackForm = document.querySelector(".feedback");
+    const originalContainer = document.querySelector(
+        ".feedback-original-container",
+    );
+
+    feedbackForm.classList.remove("text-secondary");
+    feedbackForm.classList.add("text-white");
+
+    originalContainer.appendChild(feedbackForm);
+}

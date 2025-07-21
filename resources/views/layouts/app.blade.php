@@ -10,7 +10,7 @@
 </head>
 
 <body
-    class="bg-top-right m-0 animate-fadeInScale overflow-x-hidden bg-[#0e1014] bg-[url('/public/images/bg-img.png')] bg-[length:120%_auto] bg-no-repeat text-primary backdrop-blur-xl xl:bg-[length:70%_auto]">
+    class="blur-bg bg-top-right relative m-0 animate-fadeInScale overflow-x-hidden bg-[#0e1014] bg-[url('/public/images/bg-img.png')] bg-[length:120%_auto] bg-no-repeat text-primary xl:bg-[length:70%_auto]">
 
     @include('components.icons')
     @include('layouts.header')
