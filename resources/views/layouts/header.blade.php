@@ -1,12 +1,128 @@
 <header class="animate-fade-in-scale group sticky top-0 z-50 w-full" id="site-header">
-    <div class="mx-auto flex max-w-container transition-all justify-between p-3 md:p-7">
+    <div class="mx-auto flex max-w-container items-center justify-between p-3 transition-all md:px-7 md:py-7">
         <a class="flex h-8 w-10 bg-[url('/public/images/logo-light.png')] bg-contain bg-no-repeat group-[.header--menu-shown]:bg-[url('/public/images/logo.png')] md:h-[59px] md:w-[74px]"
             href="{{ route('home') }}">
             <span class="sr-only">На главную страницу</span>
         </a>
 
-        <nav
-            class="md:top-22 fixed left-0 top-12 flex hidden h-screen w-full flex-col gap-10 bg-white px-3 pt-12 text-[#0E1014] group-[.header--menu-shown]:flex md:px-7 xl:static xl:flex xl:h-auto xl:w-[750px] xl:flex-row xl:items-center xl:bg-inherit xl:p-0 xl:text-primary">
+        <!-- Mobile navigation -->
+        <nav class="md:top-22 absolute left-0 top-12 hidden h-screen fixed transition-all duration-200 w-full bg-white p-3 pt-12 text-secondary group-[.header--menu-shown]:flex md:px-7 xl:hidden">
+            <div class="accordion flex flex-col gap-2 md:gap-4">
+                <div class="accordion__item accordion__item--shown">
+                    <div class="accordion__header flex items-center justify-start gap-5 md:justify-between">
+                        <h3 class="mr-auto text-sm font-medium uppercase leading-none md:m-0 md:text-base">Услуги</h3>
+                        <svg class="h-6 w-6 transition-transform duration-300">
+                            <use href="#icon-double-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content text-secondary/50">
+                        <ul class="m-0 mt-4 list-none p-0">
+                            <li class="mb-3">
+                                <div class="flex items-center gap-5 justify-between" id="open-dc-subview">
+                                    <h3 class="cursor-pointer text-base font-normal leading-none m-0">Услуги ЦОД</h3>
+                                    <svg class="h-6 w-6">
+                                        <use href="#icon-double-chevron-down"></use>
+                                    </svg>
+                                </div>
+                                <div class="md:top-22 fixed left-0 top-12 z-50 flex hidden w-full translate-x-full transform flex-col overflow-hidden bg-white p-5 text-secondary transition-transform duration-300 xl:hidden"
+                                    id="subview-dc-services">
+                                    <button class="mb-5 border-none bg-inherit p-0 text-start" id="subview-back">
+                                        <svg class="h-8 w-8">
+                                            <use href="#arrow-back"></use>
+                                        </svg>
+                                    </button>
+
+                                    <ul class="h-screen w-full list-none bg-inherit p-0 text-secondary/50">
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Аренда сервера</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Выделенные серверы</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Серверы для 1C</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Облачные серверы</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Услуги дата-центра</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="{{ route('colocation') }}">Colocation</a></li>
+                                        <li class="mb-3"><a class="leading-none text-inherit no-underline" href="">Аренда серверной стойки</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="{{ route('it-consulting') }}">ИТ-консалтинг</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">ИТ-аутсорсинг</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Автоматизация бизнес процессов</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Разработка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="my-3 md:my-1">
+                    <a class="text-sm font-medium uppercase leading-none text-secondary no-underline md:text-base" href="">Портфолио</a>
+                </div>
+                <div class="accordion__item accordion__item--shown">
+                    <div class="accordion__header flex items-center justify-start gap-5 md:justify-between">
+                        <h3 class="mr-auto text-sm font-medium uppercase leading-none md:m-0 md:text-base">Компания</h3>
+                        <svg class="h-6 w-6 transition-transform duration-300">
+                            <use href="#icon-double-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content text-secondary/50">
+                        <ul class="m-0 mt-4 list-none p-0">
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">О нас</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Миссия и ценности</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="{{ route('start-cooperation') }}">Начало сотрудничества</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Клиенты</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Наши процессы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion__item accordion__item--shown">
+                    <div class="accordion__header flex items-center justify-start gap-5 md:justify-between">
+                        <h3 class="mr-auto text-sm font-medium uppercase leading-none md:m-0 md:text-base">Карьера</h3>
+                        <svg class="h-6 w-6 transition-transform duration-300">
+                            <use href="#icon-double-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content text-secondary/50">
+                        <ul class="m-0 mt-4 list-none p-0">
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Вакансии</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Развитие и карьерный рост</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="m-0 leading-none text-inherit no-underline" href="">Обучение</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="my-3 md:my-1">
+                    <a class="text-sm font-medium uppercase leading-none text-secondary no-underline md:text-base" href="{{ route('contact-us') }}">Контакты</a>
+                </div>
+
+                <div class="mt-5 flex justify-end">
+                    <button class="w-21 rounded-md border-2 border-solid border-transparent bg-button-bg px-2.5 py-2 font-futura text-xs/3 uppercase text-[#F7F7FA] xl:hidden"
+                        data-click-action="show-modal" data-path="modal-callback" type="button">Связаться
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Desktop navigation -->
+        <nav class="hidden xl:block">
             <ul class="xl:w-188 m-0 flex list-none flex-col gap-7 p-0 xl:flex-row xl:justify-center xl:gap-4">
                 <li class="group/services relative flex items-center justify-between xl:list-item">
                     <a class="cursor-context-menu items-center text-sm font-medium uppercase group-hover/services:text-button-bg">Услуги
@@ -17,7 +133,7 @@
                     </svg>
                     <!-- dropdown -->
                     <ul
-                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-black opacity-0 shadow-lg transition-all duration-300 group-hover/services:visible group-hover/services:opacity-100">
+                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-secondary opacity-0 shadow-lg transition-all duration-300 group-hover/services:visible group-hover/services:opacity-100">
                         <li class="dropdown-arrow group/services-item mr-6 flex items-center justify-between">
                             <a class="navbar-link cursor-context-menu group-hover/services-item:text-button-bg" href="#">Услуги ЦОД</a>
                             <svg class="h-3 w-3 transition-all duration-200 ease-in group-hover/services-item:text-button-bg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,7 +141,7 @@
                             </svg>
 
                             <ul
-                                class="invisible absolute -top-4 left-80 z-50 w-80 list-none rounded-md bg-primary p-0 py-4 text-black opacity-0 shadow-lg transition-all duration-300 group-hover/services-item:visible group-hover/services-item:opacity-100">
+                                class="invisible absolute -top-4 left-80 z-50 w-80 list-none rounded-md bg-primary p-0 py-4 text-secondary opacity-0 shadow-lg transition-all duration-300 group-hover/services-item:visible group-hover/services-item:opacity-100">
                                 <li>
                                     <a class="navbar-link" href="{{ route('it-consulting') }}">Аренда сервера</a>
                                 </li>
@@ -36,7 +152,7 @@
                                     <a class="navbar-link" href="#">Серверы для 1C</a>
                                 </li>
                                 <li>
-                                    <a class="navbar-link" href="#">Облычные серверы</a>
+                                    <a class="navbar-link" href="#">Облачные серверы</a>
                                 </li>
                                 <li>
                                     <a class="navbar-link" href="#">Услуги дата-центра</a>
@@ -77,12 +193,12 @@
                     </svg>
                     <!-- dropdown -->
                     <ul
-                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-black opacity-0 shadow-lg transition-all duration-300 group-hover/company:visible group-hover/company:opacity-100">
+                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-secondary opacity-0 shadow-lg transition-all duration-300 group-hover/company:visible group-hover/company:opacity-100">
                         <li class="dropdown-arrow">
                             <a class="navbar-link" href="#">О нас</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="№">Миссия и ценности</a>
+                            <a class="navbar-link" href="#">Миссия и ценности</a>
                         </li>
                         <li>
                             <a class="navbar-link" href="{{ route('start-cooperation') }}">Начало сотрудничества</a>
@@ -103,7 +219,7 @@
                     </svg>
                     <!-- dropdown -->
                     <ul
-                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-black opacity-0 shadow-lg transition-all duration-300 group-hover/career:visible group-hover/career:opacity-100">
+                        class="invisible absolute left-0 z-50 mt-5 w-80 list-none rounded-md bg-primary p-0 py-4 text-secondary opacity-0 shadow-lg transition-all duration-300 group-hover/career:visible group-hover/career:opacity-100">
                         <li class="dropdown-arrow">
                             <a class="navbar-link" href="#">Вакансии</a>
                         </li>
@@ -121,8 +237,8 @@
                 </li>
             </ul>
             <div class="flex justify-end xl:hidden">
-                <button class="w-21 rounded-md border-2 border-solid border-transparent bg-button-bg px-2.5 py-2 font-futura text-xs/3 uppercase text-[#F7F7FA] xl:hidden" data-path="modal-callback"
-                    type="button">Связаться
+                <button class="w-21 rounded-md border-2 border-solid border-transparent bg-button-bg px-2.5 py-2 font-futura text-xs/3 uppercase text-[#F7F7FA] xl:hidden"
+                    data-click-action="show-modal" data-path="modal-callback" type="button">Связаться
                 </button>
             </div>
         </nav>
@@ -143,8 +259,8 @@
                     <span class="block h-[1px] w-full bg-primary"></span>
                 </div>
                 <div class="w-7.5 h-7.5 relative hidden cursor-pointer flex-col justify-center group-[.header--menu-shown]:flex">
-                    <span class="block h-[1px] w-full rotate-45 bg-black"></span>
-                    <span class="rotate-135 block h-[1px] w-full bg-black"></span>
+                    <span class="block h-[1px] w-full rotate-45 bg-secondary"></span>
+                    <span class="rotate-135 block h-[1px] w-full bg-secondary"></span>
                 </div>
             </button>
         </div>

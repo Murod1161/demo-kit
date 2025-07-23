@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
 
     <symbol id="icon-double-chevron-down" viewBox="0 0 32 32">
         <path fill="currentColor"
@@ -7,9 +7,13 @@
             d="M15.286 16.662c.379.375 1.048.377 1.429 0l6.999-6.899c.394-.391.394-1.024 0-1.414s-1.034-.391-1.428 0L16 14.544 9.715 8.349c-.394-.391-1.034-.391-1.428 0s-.394 1.024 0 1.414l6.999 6.899z" />
     </symbol>
 
-    <symbol id="icon-arrow" viewBox='0 0 15 16'>
+    <symbol id="icon-arrow" viewBox="0 0 15 16">
         <path fill="transparent" d='M1 1.5L7 7.99805L1 14.5' stroke='currentColor' stroke-width='1.5' />
         <path fill="transparent" d='M7 1.5L13 7.99805L7 14.5' stroke='currentColor' stroke-width='1.5' />
+    </symbol>
+
+    <symbol id="arrow-back" viewBox="0 0 31 8">
+        <path d="M.646 3.646a.5.5 0 000 .708l3.182 3.182a.5.5 0 00.708-.708L1.707 4l2.829-2.828a.5.5 0 10-.708-.708L.646 3.646zM31 3.5H1v1h30v-1z" fill="currentColor" />
     </symbol>
 
     <symbol id="arrow-left" viewBox="0 0 11 22">

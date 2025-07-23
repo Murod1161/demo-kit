@@ -173,13 +173,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = header.querySelector("a");
     const div = header.querySelector("div");
     const span = document.querySelectorAll(".toggler-icons span");
+    const nav = document.querySelector("nav");
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 1) {
             header.classList.add("bg-white", "shadow-md", "scrolled");
             logo.classList.remove("bg-[url('/public/images/logo-light.png')]");
             logo.classList.add("bg-[url('/public/images/logo.png')]");
-            div.classList.remove("md:p-7");
+            div.classList.add("xl:px-7");
+            div.classList.remove("md:py-7");
+            nav.classList.add("md:top-20");
+            nav.classList.remove("md:top-22");
             span.forEach((icon) => {
                 icon.classList.remove("bg-primary");
             });
@@ -190,7 +194,9 @@ document.addEventListener("DOMContentLoaded", () => {
             header.classList.remove("bg-white", "shadow-md", "scrolled");
             logo.classList.add("bg-[url('/public/images/logo-light.png')]");
             logo.classList.remove("bg-[url('/public/images/logo.png')]");
-            div.classList.add("md:px-7");
+            div.classList.add("md:py-7");
+            nav.classList.remove("md:top-20");
+            nav.classList.add("md:top-22");
             span.forEach((icon) => {
                 icon.classList.remove("bg-secondary");
             });
@@ -279,6 +285,28 @@ document.addEventListener("click", (evt) => {
             item.querySelector(".accordion__content").style.maxHeight = null;
             const svg = item.querySelector("svg");
             svg?.classList.remove("rotate-180");
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openBtn = document.getElementById("open-dc-subview");
+    const subview = document.getElementById("subview-dc-services");
+    const backBtn = document.getElementById("subview-back");
+
+    if (openBtn && subview && backBtn) {
+        openBtn.addEventListener("click", () => {
+            subview.classList.remove("hidden");
+            requestAnimationFrame(() => {
+                subview.classList.remove("translate-x-full");
+            });
+        });
+
+        backBtn.addEventListener("click", () => {
+            subview.classList.add("translate-x-full");
+            setTimeout(() => {
+                subview.classList.add("hidden");
+            }, 300);
         });
     }
 });
