@@ -193,7 +193,7 @@
                 <h2 class="md:px-15 m-0 mb-7 px-6 text-fluid-lg font-normal md:mb-10 xl:p-0">Наши услуги</h2>
                 <ul class="md:pl-15 scrollbar-none m-0 flex list-none gap-4 overflow-x-auto pl-6 pr-3 md:pr-7 xl:inline">
                     <li class="xl:grid-cols-19 group flex min-w-52 flex-col border-t border-primary/15 py-5 xl:grid xl:gap-5 xl:py-2">
-                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6">01</div>
+                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6 xl:text-sm">01</div>
                         <a class="col-span-6 mb-4 text-2xl leading-none text-inherit no-underline xl:my-5 xl:text-4xl" href="#">Услуги
                             ЦОД</a>
                         <div class="w-50 h-31 relative col-span-4 flex hidden items-center justify-center xl:block">
@@ -206,7 +206,7 @@
                             мониторинг, доступ 24/7. </div>
                     </li>
                     <li class="xl:grid-cols-19 group flex min-w-52 flex-col border-t border-primary/15 py-5 xl:grid xl:gap-5 xl:py-2">
-                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6">02</div>
+                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6 xl:text-sm">02</div>
                         <a class="col-span-6 mb-4 text-2xl leading-none text-inherit no-underline xl:my-5 xl:text-4xl" href="#">
                             ИТ-консалтинг
                         </a>
@@ -221,7 +221,7 @@
                         </div>
                     </li>
                     <li class="xl:grid-cols-19 group flex min-w-52 flex-col border-t border-primary/15 py-5 xl:grid xl:gap-5 xl:py-2">
-                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6">03</div>
+                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6 xl:text-sm">03</div>
                         <a class="col-span-6 mb-4 text-2xl leading-none text-inherit no-underline xl:my-5 xl:text-4xl" href="#">
                             ИТ-аутсорсинг
                         </a>
@@ -235,7 +235,7 @@
                         </div>
                     </li>
                     <li class="xl:grid-cols-19 group flex min-w-52 flex-col border-t border-primary/15 py-5 xl:grid xl:gap-5 xl:py-2">
-                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6">04</div>
+                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6 xl:text-sm">04</div>
                         <a class="col-span-6 mb-4 text-2xl leading-none text-inherit no-underline xl:my-5 xl:text-4xl" href="#">
                             Автоматизация бизнес-процессов</a>
                         <div class="w-50 h-31 relative col-span-4 flex hidden items-center justify-center xl:block">
@@ -247,7 +247,7 @@
                             интеграция, эффективность, контроль, анализ, снижение затрат, ускорение работы.</div>
                     </li>
                     <li class="xl:grid-cols-19 group flex min-w-52 flex-col border-t border-primary/15 py-5 xl:grid xl:gap-5 xl:py-2">
-                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6">05</div>
+                        <div class="col-span-2 mb-3 font-mono text-xs xl:my-6 xl:text-sm">05</div>
                         <a class="col-span-6 mb-4 text-2xl leading-none text-inherit no-underline xl:my-5 xl:text-4xl" href="#">
                             Разработка</a>
                         <div class="w-50 h-31 relative col-span-4 flex hidden items-center justify-center xl:block">

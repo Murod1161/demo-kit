@@ -11,8 +11,8 @@
         </p>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-[#F7F7FA]">
-        <div class="mx-auto max-w-container bg-[#F7F7FA] px-3 py-10 text-secondary md:px-7 xl:py-24">
+    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-[#FFF]">
+        <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <h2 class="m-0 font-normal leading-none md:text-3xl xl:text-4xl 2xl:text-5xl">Описание</h2>
             <p class="mt-3 md:text-lg xl:text-xl">
                 Использование современных ИТ-технологий позволяет упростить и автоматизировать рабочие процессы, что
@@ -98,8 +98,7 @@
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
-                    <p class="m-0">Приведение архитектуры и настроек корпоративных ИТ-систем в соответствие с
-                        рекомендуемыми практиками</p>
+                    <p class="m-0">Приведение архитектуры и настроек корпоративных ИТ-систем в соответствие с рекомендуемыми практиками</p>
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
@@ -107,8 +106,7 @@
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
-                    <p class="m-0">Заблаговременная оценка объема инвестиций в ИТ, согласно планам развития
-                        предприятия</p>
+                    <p class="m-0">Заблаговременная оценка объема инвестиций в ИТ, согласно планам развития предприятия</p>
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
@@ -123,13 +121,11 @@
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
-                    <p class="m-0">В штате компании эксперты, обладающие большим практическим опытом в области
-                        ИТ-консалтинга</p>
+                    <p class="m-0">В штате компании эксперты, обладающие большим практическим опытом в области ИТ-консалтинга</p>
                 </li>
                 <li class="mb-2 flex items-center gap-2 xl:gap-3">
                     <img class="w-2 2xl:w-3" src="/images/pentagon.svg">
-                    <p class="m-0">Компания КИТ — независимый системный интегратор, что позволяет нам сосредоточиться
-                        на потребностях наших клиентов и предлагать наиболее эффективные решения.</p>
+                    <p class="m-0">Компания КИТ — независимый системный интегратор, что позволяет нам сосредоточиться на потребностях наших клиентов и предлагать наиболее эффективные решения.</p>
                 </li>
             </ul>
         </div>

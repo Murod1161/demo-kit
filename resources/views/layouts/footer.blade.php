@@ -9,32 +9,32 @@
             <ul class="list-none p-0 m-0">
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         О нас </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Миссия и ценности </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="{{ route('start-cooperation') }}">
                         Начало сотрудничества </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Клиенты </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Наши процессы </a>
                 </li>
                 <li class="">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="{{ route('contact-us') }}">
                         Контакты </a>
                 </li>
             </ul>
@@ -45,17 +45,17 @@
             <ul class="list-none p-0 m-0">
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Вакансии </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Развитие и карьерный рост </a>
                 </li>
                 <li class="mb-4">
                     <a class="text-white no-underline uppercase text-xs font-medium md:text-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         Обучение </a>
                 </li>
             </ul>
@@ -72,27 +72,27 @@
 
                 <div class="flex flex-wrap gap-2">
                     <a class="text-white no-underline flex justify-center items-center w-7.5 h-7.5 md:w-8.5 md:h-8.5 border border-primary/15 rounded-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         <svg width="17" height="16">
                             <use xlink:href="#telegram"></use>
                         </svg> </a>
                     <a class="text-white no-underline flex justify-center items-center w-7.5 h-7.5 md:w-8.5 md:h-8.5 border border-primary/15 rounded-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         <svg width="17" height="16">
                             <use xlink:href="#vk"></use>
                         </svg> </a>
                     <a class="text-white no-underline flex justify-center items-center w-7.5 h-7.5 md:w-8.5 md:h-8.5 border border-primary/15 rounded-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         <svg width="17" height="16">
                             <use xlink:href="#dzen"></use>
                         </svg> </a>
                     <a class="text-white no-underline flex justify-center items-center w-7.5 h-7.5 md:w-8.5 md:h-8.5 border border-primary/15 rounded-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         <svg width="17" height="16">
                             <use xlink:href="#linkedin"></use>
                         </svg> </a>
                     <a class="text-white no-underline flex justify-center items-center w-7.5 h-7.5 md:w-8.5 md:h-8.5 border border-primary/15 rounded-sm hover:text-button-bg transition-all duration-200 ease-in"
-                        href="">
+                        href="#">
                         <svg width="17" height="16">
                             <use xlink:href="#youtube"></use>
                         </svg> </a>

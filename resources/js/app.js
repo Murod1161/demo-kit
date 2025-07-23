@@ -182,21 +182,22 @@ document.addEventListener("DOMContentLoaded", () => {
             div.classList.remove("md:p-7");
             span.forEach((icon) => {
                 icon.classList.remove("bg-primary");
-            })
+            });
             span.forEach((icon) => {
                 icon.classList.add("bg-secondary");
-            })
+            });
         } else {
             header.classList.remove("bg-white", "shadow-md", "scrolled");
             logo.classList.add("bg-[url('/public/images/logo-light.png')]");
             logo.classList.remove("bg-[url('/public/images/logo.png')]");
-            div.classList.add("md:p-7");
+            div.classList.add("md:px-7");
             span.forEach((icon) => {
                 icon.classList.remove("bg-secondary");
-            })
+            });
             span.forEach((icon) => {
                 icon.classList.add("bg-primary");
-            })}
+            });
+        }
     });
 });
 
@@ -235,3 +236,49 @@ function hideModal() {
 
     originalContainer.appendChild(feedbackForm);
 }
+
+document.addEventListener("click", (evt) => {
+    const header = evt.target.closest(".accordion__header");
+
+    if (header) {
+        const currentItem = header.parentElement;
+        const accordion = currentItem.closest(".accordion");
+        const content = currentItem.querySelector(".accordion__content");
+        const icon = header.querySelector("svg");
+        const isShown = currentItem.classList.contains(
+            "accordion__item--shown",
+        );
+
+        // Закрываем все, кроме текущего
+        accordion.querySelectorAll(".accordion__item").forEach((item) => {
+            if (item !== currentItem) {
+                item.classList.remove("accordion__item--shown");
+                item.querySelector(".accordion__content").style.maxHeight =
+                    null;
+                const svg = item.querySelector("svg");
+                svg?.classList.remove("rotate-180");
+            }
+        });
+
+        // Тогглим текущий
+        currentItem.classList.toggle("accordion__item--shown");
+
+        if (!isShown) {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.classList.add("rotate-180");
+        } else {
+            content.style.maxHeight = null;
+            icon.classList.remove("rotate-180");
+        }
+    }
+
+    // Клик вне аккордеона — закрываем всё
+    if (!evt.target.closest(".accordion")) {
+        document.querySelectorAll(".accordion__item--shown").forEach((item) => {
+            item.classList.remove("accordion__item--shown");
+            item.querySelector(".accordion__content").style.maxHeight = null;
+            const svg = item.querySelector("svg");
+            svg?.classList.remove("rotate-180");
+        });
+    }
+});

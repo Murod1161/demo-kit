@@ -85,7 +85,7 @@
                             <a class="navbar-link" href="№">Миссия и ценности</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="#">Начало сотрудничества</a>
+                            <a class="navbar-link" href="{{ route('start-cooperation') }}">Начало сотрудничества</a>
                         </li>
                         <li>
                             <a class="navbar-link" href="#">Клиенты</a>

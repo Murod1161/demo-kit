@@ -43,15 +43,27 @@
     box-sizing: border-box;
 }
 .blur-bg {
-  position: relative;
-  z-index: 0;
+    position: relative;
+    z-index: 0;
 }
 .blur-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(24px);
-  z-index: -50;
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(24px);
+    z-index: -50;
+}
+
+.accordion {
+    width: 100%;
+    margin: 0;
+}
+
+.accordion__content {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
 .header--menu-shown {
