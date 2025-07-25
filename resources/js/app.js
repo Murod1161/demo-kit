@@ -175,6 +175,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const span = document.querySelectorAll(".toggler-icons span");
     const nav = document.querySelector("nav");
 
+    window.addEventListener("load", () => {
+        if (window.scrollY > 1) {
+            header.classList.add("bg-white", "shadow-md", "scrolled");
+            header.classList.remove("animate-fade-in-scale");
+            logo.classList.remove("bg-[url('/public/images/logo-light.png')]");
+            logo.classList.add("bg-[url('/public/images/logo.png')]");
+            div.classList.add("xl:px-7");
+            div.classList.remove("md:py-7");
+            nav.classList.add("md:top-20");
+            nav.classList.remove("md:top-22");
+            span.forEach((icon) => {
+                icon.classList.remove("bg-primary");
+            });
+            span.forEach((icon) => {
+                icon.classList.add("bg-secondary");
+            });
+        } else {
+            header.classList.remove("bg-white", "shadow-md", "scrolled");
+            logo.classList.add("bg-[url('/public/images/logo-light.png')]");
+            logo.classList.remove("bg-[url('/public/images/logo.png')]");
+            div.classList.add("md:py-7");
+            nav.classList.remove("md:top-20");
+            nav.classList.add("md:top-22");
+            span.forEach((icon) => {
+                icon.classList.remove("bg-secondary");
+            });
+            span.forEach((icon) => {
+                icon.classList.add("bg-primary");
+            });
+        }
+    });
+
     window.addEventListener("scroll", () => {
         if (window.scrollY > 1) {
             header.classList.add("bg-white", "shadow-md", "scrolled");
@@ -237,10 +269,27 @@ function hideModal() {
         ".feedback-original-container",
     );
 
-    feedbackForm.classList.remove("text-secondary");
-    feedbackForm.classList.add("text-white");
-
+    if (window.location.pathname == "/") {
+        feedbackForm.classList.remove("text-secondary");
+        feedbackForm.classList.add("text-white");
+    }
     originalContainer.appendChild(feedbackForm);
+}
+
+document.querySelectorAll('[data-click-action="show-popup"]').forEach((btn) => {
+    btn.addEventListener("click", showPopup);
+});
+
+document.querySelectorAll('[data-click-action="hide-popup"]').forEach((btn) => {
+    btn.addEventListener("click", hidePopup);
+});
+
+function showPopup() {
+    document.querySelector(".order-popup").classList.remove("hidden");
+}
+
+function hidePopup() {
+    document.querySelector(".order-popup").classList.add("hidden");
 }
 
 document.addEventListener("click", (evt) => {
@@ -255,7 +304,6 @@ document.addEventListener("click", (evt) => {
             "accordion__item--shown",
         );
 
-        // Закрываем все, кроме текущего
         accordion.querySelectorAll(".accordion__item").forEach((item) => {
             if (item !== currentItem) {
                 item.classList.remove("accordion__item--shown");
@@ -266,7 +314,6 @@ document.addEventListener("click", (evt) => {
             }
         });
 
-        // Тогглим текущий
         currentItem.classList.toggle("accordion__item--shown");
 
         if (!isShown) {
@@ -278,7 +325,6 @@ document.addEventListener("click", (evt) => {
         }
     }
 
-    // Клик вне аккордеона — закрываем всё
     if (!evt.target.closest(".accordion")) {
         document.querySelectorAll(".accordion__item--shown").forEach((item) => {
             item.classList.remove("accordion__item--shown");
@@ -310,3 +356,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+let tariffs = [
+    { id: 1, title: "Colocation 1U" },
+    { id: 2, title: "Tower" },
+];
+
+function onOrderClick(id) {
+    const item = tariffs.find((tariff) => tariff.id == id);
+    console.log(item);
+}
+
+onOrderClick(1);

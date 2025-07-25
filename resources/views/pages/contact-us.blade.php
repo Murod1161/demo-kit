@@ -3,7 +3,7 @@
 @section('title', 'Контакты | ' . config('app.name'))
 
 @section('content')
-    <section class="xl:pt-30 overflow-hidden px-3 md:px-7 py-10 xl:mx-7 xl:px-7">
+    <section class="2xl:mx-auto max-w-container xl:pt-30 overflow-hidden px-3 md:px-7 py-10 xl:mx-7 xl:px-7">
         <h1 class="text-fluid-lg font-medium xl:hidden m-0 mb-5">Контакты</h1>
         <div class="grid-cols-24 mb-10 lg:mb-15 xl:mb-20 grid">
             <div class="col-span-5">

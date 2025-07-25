@@ -3,7 +3,7 @@
 @section('title', 'Начало сотрудничества | ' . config('app.name'))
 
 @section('content')
-    <section class="2xl:mb-30 2xl:mt-30 mb-7 cursor-pointer select-none p-3 md:p-7 2xl:mx-8">
+    <section class="2xl:mx-auto max-w-container 2xl:mb-30 2xl:mt-30 mb-7 select-none p-3 md:p-7">
         <h1 class="animate-fade-in-scale 2xl:mb-15 m-0 mb-7 text-[45px] font-normal leading-none md:text-fluid-xl 2xl:text-[150px]">Начало<br>
             сотрудничества</h1>
         <p class="animate-fade-in-scale max-w-200 m-0 text-xl font-normal leading-none text-primary/50 md:text-[28px]">
@@ -11,7 +11,7 @@
         </p>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-white">
+    <section class="w-full bg-white">
         <div class="mx-auto flex max-w-container flex-col items-center px-3 py-10 text-secondary md:px-7 xl:py-24">
             <h2 class="md:w-130 lg:w-130 xl:w-200 xl:mb-18 2xl:w-260 m-0 mb-6 font-normal leading-none md:mb-10 md:text-3xl lg:mb-12 xl:text-5xl 2xl:text-6xl">Мы ценим каждый запрос и оперативно на него
                 реагируем
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-[#f7f7fa]">
+    <section class="w-full bg-[#f7f7fa]">
         <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <div class="grid-cols-24 grid">
                 <div class="col-span-5">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-white">
+    <section class="w-full bg-white">
         <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <div class="grid-cols-24 grid">
                 <div class="col-span-5">
@@ -386,7 +386,7 @@
         </div>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-[#f7f7fa]">
+    <section class="w-full bg-[#f7f7fa]">
         <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <div class="grid-cols-24 grid">
                 <div class="col-span-5">
@@ -418,7 +418,7 @@
         </div>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-white text-secondary">
+    <section class="w-full bg-white text-secondary">
         <div class="mx-auto max-w-container px-3 py-10 md:px-7 xl:py-24 flex flex-col gap-12">
             <div class="w-full xl:flex xl:items-center xl:gap-10">
                 <h2 class="m-0 mb-7 text-4xl font-normal md:text-fluid-lg 2xl:text-9xl">Оставить заявку</h2>

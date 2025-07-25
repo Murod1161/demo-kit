@@ -122,7 +122,7 @@
         </nav>
 
         <!-- Desktop navigation -->
-        <nav class="hidden xl:block">
+        <nav class="hidden xl:block text-white">
             <ul class="xl:w-188 m-0 flex list-none flex-col gap-7 p-0 xl:flex-row xl:justify-center xl:gap-4">
                 <li class="group/services relative flex items-center justify-between xl:list-item">
                     <a class="cursor-context-menu items-center text-sm font-medium uppercase group-hover/services:text-button-bg">Услуги
@@ -158,7 +158,7 @@
                                     <a class="navbar-link" href="#">Услуги дата-центра</a>
                                 </li>
                                 <li>
-                                    <a class="navbar-link" href="#">Colocation</a>
+                                    <a class="navbar-link" href="{{ route('colocation') }}">Colocation</a>
                                 </li>
                                 <li>
                                     <a class="navbar-link" href="#">Аренда серверной стойки</a>

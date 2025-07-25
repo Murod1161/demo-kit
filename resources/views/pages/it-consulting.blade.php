@@ -3,7 +3,7 @@
 @section('title', 'ИТ-консалтинг | ' . config('app.name'))
 
 @section('content')
-    <section class="md:mb-15 xl:my-30 2xl xl:gap-3:mb-20 2xl:mt-30 mb-7 select-none p-3 md:p-7 2xl:mx-8">
+    <section class="2xl:mx-auto max-w-container md:mb-15 xl:my-30 2xl xl:gap-3:mb-20 2xl:mt-30 mb-7 select-none p-3 md:p-7 2xl:mx-8">
         <h1 class="animate-fade-in-scale 2xl:mb-15 m-0 mb-7 text-fluid-xl font-normal leading-none leading-none 2xl:text-[150px]">ИТ-консалтинг</h1>
         <p class="animate-fade-in-scale max-w-120 xl:max-w-150 m-0 text-xl font-normal leading-none text-primary/50 md:text-[28px]">
             Мы предоставляем консалтинговые услуги в области ит-технологий и помогаем в формировании стратегии развития
@@ -11,7 +11,7 @@
         </p>
     </section>
 
-    <section class="relative left-1/2 w-screen -translate-x-1/2 bg-[#FFF]">
+    <section class="w-full bg-[#FFF]">
         <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <h2 class="m-0 font-normal leading-none md:text-3xl xl:text-4xl 2xl:text-5xl">Описание</h2>
             <p class="mt-3 md:text-lg xl:text-xl">

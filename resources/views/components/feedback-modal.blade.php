@@ -18,7 +18,7 @@
         <span class="font-medium uppercase text-secondary">Закрыть</span>
     </div>
 
-    @unless (request()->routeIs('home'))
+    @unless (request()->routeIs('home', 'start-cooperation'))
         @include('components.feedback-form')
     @endunless
 
