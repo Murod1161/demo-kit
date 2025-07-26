@@ -321,10 +321,9 @@
         margin-left: 20px;
         border-bottom: 2px dotted #eaeaea;
     }
-}
-
-.mb-additional-services__price-monthly,
-.mb-additional-services__price-install {
-    width: 70px;
-    text-align: end;
+    .mb-additional-services__price-monthly,
+    .mb-additional-services__price-install {
+        width: 70px;
+        text-align: end;
+    }
 }
