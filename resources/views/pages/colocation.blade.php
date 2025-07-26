@@ -29,8 +29,8 @@
                         </svg>
                     </div>
                     <div class="accordion__content cursor-default">
-                        <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                            <ul class="list-none p-0">
+                        <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                            <ul class="m-0 list-none p-0">
                                 <li class="mb-3 flex items-start gap-2">
                                     <img class="w-2 md:w-3" src="/images/pentagon.svg">
                                     <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
@@ -51,7 +51,7 @@
                                     <img class="w-2 md:w-3" src="/images/pentagon.svg">
                                     <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
                                 </li>
-                                <li class="mb-3 flex items-start gap-2">
+                                <li class="flex items-start gap-2">
                                     <img class="w-2 md:w-3" src="/images/pentagon.svg">
                                     <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
                                 </li>
@@ -116,33 +116,41 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование"> Дополнительные 100
+                                            Вт электрической
+                                            мощности (220V/48V)</div>
+                                        <div class="mb-additional-services__price flex flex-col lg:flex-row lg:gap-10">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 200 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительная
+                                            розетка без выделения мощности</div>
+                                        <div class="mb-additional-services__price flex flex-col lg:flex-row lg:gap-10">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 30 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительная
+                                            розетка питания 100 Вт</div>
+                                        <div class="mb-additional-services__price flex flex-col lg:flex-row lg:gap-10">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 320 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,33 +162,104 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Порт локальной сети
+                                            1 Гбит/c</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 30 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Порт локальной сети
+                                            10 Гбит/c</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 300 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            100 Мбит/c без Интернета</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 20 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            1 Гбит/c без Интернета</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 30 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            10 Гбит/c без Интернета</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 300 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            10 Мбит/с с Интернетом</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 110 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            100 Мбит/с с Интернетом</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 600 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Дополнительный порт
+                                            1 Гбит/с с Интернетом</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 3600 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Увеличение скорости
+                                            подключения на 100 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 600 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Увеличение скорости
+                                            подключения до 1 Гбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 3600 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">MC-LAG 1 Гбит/с
+                                        </div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 50 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,33 +271,71 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">1 IPv4-адрес</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 15 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv4 /29 (5
+                                            шт)</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 120 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv4 /28 (13
+                                            шт)</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 240 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv4 /27 (29
+                                            шт)</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 480 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv4 /26 (61
+                                            шт)</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 960 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv6 /64
+                                        </div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 15 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Подсеть IPv6 /48
+                                        </div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 120 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,33 +347,85 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Диск для бэкапов 50
+                                            Гб</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 5 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Диск для бэкапов 100
+                                            Гб</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 10 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Диски для бэкапов 1
+                                            Тб</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 100 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item mb-2 cursor-pointer rounded-lg bg-white shadow-sm md:mb-4">
+                        <div class="accordion__header flex items-center justify-between gap-5 p-4 md:p-7">
+                            <h3 class="m-0 text-lg font-normal leading-none md:text-xl">Каналы и линии связи</h3>
+                            <svg class="h-6 w-6 text-button-bg transition-transform duration-300">
+                                <use href="#icon-double-chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content cursor-default">
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Оптическое волокно
+                                            от ... до ...</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 1836 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 1836 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Кабельная
+                                            канализация K-Tech</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 360 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 360 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">VLAN между
+                                            дата-центрами 1 Гбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 100 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 100 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,33 +437,72 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита 10 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 457 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита 20 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 823 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита 50 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 1739 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита 100 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 3203 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита уровня L7 5 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 2500 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита уровня L7 10 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 5000 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита уровня L7 25 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 10000 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Защита уровня L7 50 Мбит/с</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 15000 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,33 +514,37 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Оптическая или медная кроссировка по дата-центру</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 80 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 80 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Кроссировка по дата-центру до магистрального узла ТТК</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 180 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 180 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Кроссировка по дата-центру до магистрального узла TeliaCarrier</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 180 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 180 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,33 +556,58 @@
                             </svg>
                         </div>
                         <div class="accordion__content cursor-default">
-                            <div class="accordion__content-inner px-4 md:px-7 md:pb-3">
-                                <ul class="list-none p-0">
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Безлимитный трафик на скорости 100 Мбит/с или 1Гбит/с с 100 ТБ</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Один публичный IPv4-адрес в приватном VLAN</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Подключение порта удаленного управления (IPMI, iLO, iDRACK)</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Техническая поддержка 24/7</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Услуги удаленного обслуживания</p>
-                                    </li>
-                                    <li class="mb-3 flex items-start gap-2">
-                                        <img class="w-2 md:w-3" src="/images/pentagon.svg">
-                                        <p class="m-0 leading-none">Монтаж оборудования в дата-центре</p>
-                                    </li>
-                                </ul>
+                            <div class="accordion__content-inner border-t-1 border-secondary/10 p-4 md:p-7">
+                                <div class="mb-additional-services__content grid gap-5 lg:gap-0">
+                                    <div class="mb-7 hidden justify-between text-xl font-medium lg:flex">
+                                        <span class="lg-additional-services__name">Наименование</span>
+                                        <div class="lg-additional-services__price flex gap-10">
+                                            <span class="lg-additional-services__price-install">Установка</span>
+                                            <span class="lg-additional-services__price-monthly">В месяц</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Предоставление ячейки хранения ЗИП</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 160 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Аренда АВР, 8А, 1.7кВт, 2 розетки schuko, 4 розетки C13</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 160 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Предоставление кабеля электропитания 10A, 100-230V, 2′, (5) C13 to C14, 1 шт.</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 40 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> Бесплатно </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Предоставление патч-корда до 3 метров</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> 40 TJS </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> Бесплатно </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Хранение упаковки</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 500 TJS </span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-additional-services__content-item md:flex md:items-center md:justify-between">
+                                        <div class="mb-additional-services__name mb-3 text-lg leading-none text-secondary/70 md:mb-0 lg:w-[80%] xl:w-[85%]" data-title="Наименование">Хранение единицы оборудования на складе</div>
+                                        <div class="mb-additional-services__price lg:gap-10 flex flex-col lg:flex-row">
+                                            <span class="mb-additional-services__price-install" data-title="Установка:"> — </span>
+                                            <span class="mb-additional-services__price-monthly" data-title="В месяц:"> 700 TJS </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
