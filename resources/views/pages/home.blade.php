@@ -12,7 +12,7 @@
     <section>
         <div class="h-px w-full bg-primary/30"></div>
 
-        <div class="xl:px- mb-5 px-3 md:mb-10 md:px-7 mx-auto max-w-container">
+        <div class="xl:px- mx-auto mb-5 max-w-container px-3 md:mb-10 md:px-7">
             <ul class="m-0 flex list-none items-center justify-around p-0 py-5 font-normal">
                 <li class="flex items-center gap-1">
                     <div class="text-2xl md:text-4xl xl:text-5xl">>10</div>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section class="2xl:mx-auto max-w-container xl:py-30 mx-3 md:mx-7 rounded-xl bg-[#16181D] px-3 py-6 md:px-8 md:py-20">
+    <section class="xl:py-30 mx-3 max-w-container rounded-xl bg-[#16181D] px-3 py-6 md:mx-7 md:px-8 md:py-20 2xl:mx-auto">
         <div class="grid-cols-24 grid">
             <div class="col-span-5">
                 <span class="hidden pt-5 uppercase xl:block">Подход</span>
@@ -181,7 +181,7 @@
         </ul>
     </section>
 
-    <section class="py-15 xl:py-30 xl:mx-7 xl:px-7 2xl:mx-auto max-w-container">
+    <section class="py-15 xl:py-30 max-w-container xl:mx-7 xl:px-7 2xl:mx-auto">
         <div class="grid-cols-24 grid">
             <div class="col-span-5">
                 <span class="hidden pt-5 uppercase text-primary/50 xl:block">Наши услуги</span>
@@ -262,7 +262,7 @@
         </div>
     </section>
 
-    <section class="2xl:mx-auto max-w-container xl:py-25 relative mx-3 overflow-hidden rounded-xl bg-white px-3 py-6 text-secondary md:mx-7 md:px-8 md:py-20">
+    <section class="xl:py-25 relative mx-3 max-w-container overflow-hidden rounded-xl bg-white px-3 py-6 text-secondary md:mx-7 md:px-8 md:py-20 2xl:mx-auto">
         <div class="grid-cols-24 grid">
             <div class="col-span-5">
                 <span class="hidden pt-5 uppercase xl:block">О компании</span>
@@ -292,7 +292,7 @@
 
     </section>
 
-    <section class="2xl:mx-auto max-w-container py-15 xl:py-30 xl:pl-15 xl:relative xl:pr-7">
+    <section class="py-15 xl:py-30 xl:pl-15 max-w-container xl:relative xl:pr-7 2xl:mx-auto">
         <h2 class="md:px-15 m-0 mb-7 px-6 text-fluid-lg font-normal leading-none text-white md:mb-10 xl:p-0 2xl:mb-28 2xl:text-9xl">
             Наши проекты</h2>
         <div class="gap-47 flex">
@@ -418,7 +418,7 @@
         </div>
     </section>
 
-    <section class="2xl:mx-auto max-w-container xl:py-30 mx-3 rounded-xl bg-[#16181D] px-3 py-6 md:mx-7 md:px-8 md:py-20">
+    <section class="xl:py-30 mx-3 max-w-container rounded-xl bg-[#16181D] px-3 py-6 md:mx-7 md:px-8 md:py-20 2xl:mx-auto">
         <div class="grid-cols-24 grid">
             <div class="col-span-5">
             </div>
@@ -596,7 +596,7 @@
 
     <x-brand-slider :logos="$logos" />
 
-    <section class="mx-auto max-w-container md:px-15 py-15 px-6">
+    <section class="md:px-15 py-15 mx-auto max-w-container px-6">
         <div class="flex flex-col justify-between gap-12">
             <div class="w-full xl:flex xl:items-center xl:gap-10">
                 <h2 class="m-0 mb-7 text-4xl font-normal md:text-fluid-lg 2xl:text-9xl">Оставить заявку</h2>
@@ -609,7 +609,7 @@
         </div>
     </section>
 
-    <section class="mx-auto max-w-container md:pt-15 2xl:pt-25 xl:pb-15 md:px-7 md:pb-10 xl:pt-20 2xl:pb-20">
+    <section class="md:pt-15 2xl:pt-25 xl:pb-15 mx-auto max-w-container md:px-7 md:pb-10 xl:pt-20 2xl:pb-20">
         <div class="flex select-none flex-col gap-10 overflow-hidden md:grid md:grid-cols-2 md:gap-4">
             <div class="swiper swiper--main-vacancies relative !mx-3 !overflow-visible rounded-xl md:!m-0 md:!overflow-hidden">
                 <div class="swiper-wrapper">

@@ -70,6 +70,16 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".btn-next--main-vacancies",
         },
     });
+
+    new Swiper(".swiper--reviews", {
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 8,
+        navigation: {
+            prevEl: ".btn-prev--reviews",
+            nextEl: ".btn-next--reviews",
+        },
+    });
 });
 
 const select = document.getElementById("themeSelect");
@@ -309,8 +319,9 @@ document.addEventListener("click", (evt) => {
                 item.classList.remove("accordion__item--shown");
                 item.querySelector(".accordion__content").style.maxHeight =
                     null;
+
                 const svg = item.querySelector("svg");
-                svg?.classList.remove("rotate-180");
+                svg?.classList.remove("rotate-180", "rotate-90", "text-button-bg");
             }
         });
 
@@ -318,10 +329,24 @@ document.addEventListener("click", (evt) => {
 
         if (!isShown) {
             content.style.maxHeight = content.scrollHeight + "px";
-            icon.classList.add("rotate-180");
+
+            if (icon?.classList.contains("faq-accordion")) {
+                icon.classList.add("rotate-90");
+            } else {
+                icon?.classList.add("rotate-180");
+            }
+
+            icon?.classList.add("text-button-bg");
         } else {
             content.style.maxHeight = null;
-            icon.classList.remove("rotate-180");
+
+            if (icon?.classList.contains("faq-accordion")) {
+                icon.classList.remove("rotate-90");
+            } else {
+                icon?.classList.remove("rotate-180");
+            }
+
+            icon?.classList.remove("text-button-bg");
         }
     }
 
@@ -329,8 +354,9 @@ document.addEventListener("click", (evt) => {
         document.querySelectorAll(".accordion__item--shown").forEach((item) => {
             item.classList.remove("accordion__item--shown");
             item.querySelector(".accordion__content").style.maxHeight = null;
+
             const svg = item.querySelector("svg");
-            svg?.classList.remove("rotate-180");
+            svg?.classList.remove("rotate-180", "rotate-90", "text-button-bg");
         });
     }
 });

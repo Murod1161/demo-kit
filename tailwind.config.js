@@ -34,6 +34,9 @@ module.exports = {
       animation: {
         fadeInScale: "fadeInScale 1.2s ease-out forwards",
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #4847F4 0%, #151515 65%)',
+      },
     },
   },
   plugins: [],

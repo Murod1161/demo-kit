@@ -23,6 +23,10 @@
     "file": "assets/bg-img-BfcXlqRB.png",
     "src": "public/images/bg-img.png"
   },
+  "public/images/lines-bg.svg": {
+    "file": "assets/lines-bg-BZ7bgQJ9.svg",
+    "src": "public/images/lines-bg.svg"
+  },
   "public/images/logo-light.png": {
     "file": "assets/logo-light-DUdbgoNo.png",
     "src": "public/images/logo-light.png"
@@ -32,12 +36,12 @@
     "src": "public/images/logo.png"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Cd8DLf5a.css",
+    "file": "assets/app-CqTbvRjE.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-9R-Vw65w.js",
+    "file": "assets/app-yFXqreTj.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,

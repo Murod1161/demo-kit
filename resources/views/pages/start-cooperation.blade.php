@@ -390,7 +390,7 @@
         <div class="mx-auto max-w-container px-3 py-10 text-secondary md:px-7 xl:py-24">
             <div class="grid-cols-24 grid">
                 <div class="col-span-5">
-                    <span class="hidden pt-5 uppercase text-secondary/50 xl:block">Сотрудничество</span>
+                    <span class="hidden pt-5 uppercase text-secondary/50 xl:block">Поддержка</span>
                 </div>
 
                 <div class="xl:col-span-19 col-span-full">
