@@ -1,6 +1,11 @@
 <div class="order-popup fixed left-0 top-0 flex hidden h-screen w-screen items-center justify-center bg-black/50 transition-all duration-300">
     <div class="w-140 relative rounded-lg bg-white p-10 text-secondary">
         <h1 class="m-0 mb-5 font-medium">Заказ</h1>
+        <div class="mb-5 text-sm leading-relaxed text-secondary" id="order-details">
+            <div class="text-lg font-semibold text-button-bg" id="popup-tariff-name">...</div>
+            <div class="mt-1" id="popup-specs">...</div>
+            <div class="mt-2 text-xl font-medium text-secondary" id="popup-price">...</div>
+        </div>
         <form class="flex justify-between gap-5" action="">
             <input class="w-full rounded-lg border border-secondary/50 px-3 py-2 shadow-sm focus:border-button-bg focus:outline-none focus:ring-1 focus:ring-button-bg" name="your-name" type="text"
                 placeholder="Ваше имя">
@@ -12,7 +17,7 @@
                 type="submit">Заказать</button>
         </div>
         <div class="mt-5 flex items-center gap-2">
-            <input class="id="consent" name="consent" type="checkbox" required />
+            <input id="consent" name="consent" type="checkbox" required />
             <label class="text-base" for="consent">
                 Даю согласие на обработку и хранение моих персональных данных
             </label>

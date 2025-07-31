@@ -294,12 +294,35 @@ document.querySelectorAll('[data-click-action="hide-popup"]').forEach((btn) => {
     btn.addEventListener("click", hidePopup);
 });
 
-function showPopup() {
-    document.querySelector(".order-popup").classList.remove("hidden");
+function showPopup(e) {
+  const button = e.currentTarget;
+  const popup = document.querySelector(".order-popup");
+
+  const card = button.closest("li");
+  const title = card?.querySelector(".mb-services__title")?.textContent.trim();
+  const specs = Array.from(card?.querySelectorAll(".mb-services__spec") ?? [])
+    .map(el => el.textContent.trim())
+    .join(" / ");
+  const price = card?.querySelector(".mb-services__price")?.textContent.trim();
+
+  // Подставляем в попап
+  if (title) {
+    document.getElementById("popup-tariff-name").textContent = title;
+  }
+
+  if (specs) {
+    document.getElementById("popup-specs").textContent = specs;
+  }
+
+  if (price) {
+    document.getElementById("popup-price").textContent = price;
+  }
+
+  popup?.classList.remove("hidden");
 }
 
 function hidePopup() {
-    document.querySelector(".order-popup").classList.add("hidden");
+  document.querySelector(".order-popup")?.classList.add("hidden");
 }
 
 document.addEventListener("click", (evt) => {
